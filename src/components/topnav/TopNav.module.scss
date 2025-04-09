@@ -1,23 +1,30 @@
 @use "../../scss/abstracts/" as *;
 
 .topNav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid gainsboro;
-  margin-bottom: 4rem;
+  @include flex(space-between, center);
+  padding: 1rem;
+  background-color: var(--bgc);
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--box-shadow);
+
   &_left {
-    @include flex(center, flex-start);
-    flex-wrap: wrap;
-    flex: 1;
+    @include flex(flex-start, center);
+    gap: 1rem;
+    margin-right: auto;
 
     &_menu_icon {
       cursor: pointer;
+      display: block;
       @include tablet {
         display: none;
       }
     }
+
     &_menu {
+      cursor: pointer;
       display: none;
       @include tablet {
         display: block;
@@ -26,9 +33,20 @@
   }
 
   &_right {
-    flex: 1;
+    @include flex(flex-end, center);
+    gap: 1rem;
+    margin-left: auto;
+    height: 100%;
+    align-items: center;
   }
 }
+
+.profile_wrapper {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+
 .search_desktop_wrapper {
   flex: 1;
   @media screen and (max-width: 975px) {

@@ -11,7 +11,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  transition: all 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
   z-index: 200;
   overflow-y: auto;
   overflow-x: hidden;
@@ -20,6 +20,13 @@
     width: 50px;
     @include tablet {
       width: 100%;
+    }
+
+    .sidebar__logo {
+      margin-left: -2rem;
+      img {
+        --size: 10rem;
+      }
     }
   }
 
@@ -31,15 +38,17 @@
   }
 
   &__logo {
-    // @include flex();
-    // width: $sideBarLogoHeight;
-    text-align: center;
+    text-align: left;
     padding: 0 12px 2rem;
+    margin-left: 1rem;
+    transition: none;
 
     img {
-      --size: 7.5rem;
+      --size: 10rem;
       width: var(--size);
       height: var(--size);
+      filter: invert(15%) sepia(100%) saturate(5000%) hue-rotate(0deg) brightness(100%) contrast(100%);
+      transition: none;
     }
 
     @include tablet {

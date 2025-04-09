@@ -10,7 +10,7 @@ i18n
     resources: {
       en: {
         translation: {
-          zahraMirzaei: "Zahra Mirzaei",
+          zahraMirzaei: "Harsh Wadhwani",
           admin: "admin",
           dashboard: "Dashboard",
           orders: "Orders",
@@ -22,9 +22,9 @@ i18n
           logout: "Logout",
           login: "Login",
           summary: "Summary",
-          thisMonthSales: "This month Sales",
-          thisMonthOrders: "This month Orders",
-          thisMonthRevenue: "This month Revenue",
+          thisMonthSales: "Number of Blogs",
+          thisMonthOrders: "Number of Users",
+          thisMonthRevenue: "Number of Categories",
           quickAnalysis: "Quick Analysis",
           topCustomers: "Top Customers",
           latestTransaction: "Latest Transactions",

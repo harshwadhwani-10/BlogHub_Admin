@@ -7,22 +7,22 @@ import { IsummData } from "../../interfaces/IsummData";
 
 const summaryData: IsummData[] = [
   {
-    icon: "akar-icons:shopping-bag",
+    icon: "mdi:post",
     text: "thisMonthSales",
     amount: "salesAmount",
-    currency: "currency",
+    currency: "",
   },
   {
-    icon: "icon-park-outline:transaction-order",
+    icon: "mdi:account-group",
     text: "thisMonthOrders",
     amount: "orderAmount",
     currency: "",
   },
   {
-    icon: "jam:coin",
+    icon: "mdi:folder-multiple",
     text: "thisMonthRevenue",
     amount: "revenueAmount",
-    currency: "currency",
+    currency: "",
   },
 ];
 

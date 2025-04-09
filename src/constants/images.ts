@@ -1,5 +1,7 @@
+import logo from "../assets/images/logo.svg";
+
 const images = {
-  logo: require("../assets/images/digikalaLogo.png"),
+  logo: logo,
   avt: require("../assets/images/avatar.jpg"),
   logKey: require("../assets/images/Reset password-pana.svg"),
   dashboard: require("../assets/images/Revenue-cuate.svg"),
